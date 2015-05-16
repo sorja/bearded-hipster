@@ -14,9 +14,11 @@ getDefaultProps: function() {
   };
 },
   render: function() {
+    var i = this.props.i;
     return (
-      <li>
-        <h1>{this.props.i + this.props.data.title}</h1>
+      <li className="todo-item">
+        <span className="delete-btn">x</span>
+        <h2>{this.props.data.title}</h2>
         <p>{this.props.data.description}</p>
       </li>
     );

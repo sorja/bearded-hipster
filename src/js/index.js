@@ -32,10 +32,51 @@ var App = React.createClass({
 
     return (
       <div>
-        <h1>To Do -list</h1>
-        <ul>
-          {todos}
-        </ul>
+        <div className="main-header">
+          <h1>To Do <small>-list</small></h1>
+        </div>
+        <div className="container">
+
+          <div className="row">
+            <ul>
+              {todos}
+            </ul>
+          </div>
+
+          <Footer />
+
+        </div>
+      </div>
+    );
+  }
+
+});
+
+var React = require('react');
+
+var Footer = React.createClass({
+
+  render: function() {
+    return (
+
+      <div className="row">
+
+        <div className="medium">
+          Footer box 1
+        </div>
+
+        <div className="medium">
+          Footer box 2
+        </div>
+
+        <div className="medium">
+          Footer box 3
+        </div>
+
+        <div className="medium">
+          Footer box 4
+        </div>
+
       </div>
     );
   }
